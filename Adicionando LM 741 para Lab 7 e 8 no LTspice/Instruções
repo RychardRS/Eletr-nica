@@ -1,0 +1,11 @@
+1º baixe o arquivo que será upado nesse diretório "LM741" arquivo .MOD
+
+2º encontre o caminho do arquivo que você acabou de baixar, ou seja, vá em "propriedades" do arquivo baixado, depois em "segurança" e onde tem escrito 'nome do objeto' 
+será o seu caminho do arquivo, se seu sistema operacional for Windows, provavelmente vai ter algo do tipo: "C:\Users\nomeDoSeuUsuario\Downloads\LM741.MOD", basta copiar
+esse caminho.
+
+3º feito isso, agora abriremos o LTspice e adicionamos uma "spice directive" clicando em "s" e digitar um " .include " e colar seu caminho, vai ficar algo do tipo: 
+" .include C:\Users\nomeDoSeuUsuario\Downloads\LM741.MOD"
+
+4º pra finalizar, adicionaremos o amplificador operacional "opamp2" nos componentes, feito isso, mudaremos seu valor, onde tem escrito "Value" será alterado e
+digitado exatamente o seguinte: "LM741/NS" e está pronto pra uso o amplificador
